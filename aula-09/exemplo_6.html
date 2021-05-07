@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untitled 1</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .coluna1,
+      .coluna2,
+      .coluna3 {
+        height: 300px;
+      }
+
+      .coluna1 {
+        background-color: green;
+      }
+
+      .coluna2 {
+        background-color: lightgreen;
+      }
+
+      .coluna3 {
+        background-color: chocolate;
+      }
+
+      @media screen and (min-width: 320px) {
+        .coluna1 {
+          background-color: lightpink;
+        }
+
+        .coluna2 {
+          background-color: lightblue;
+        }
+
+        .coluna3 {
+          background-color: lightsalmon;
+        }
+      }
+
+      @media screen and (max-width: 780px) {
+        .coluna1,
+        .coluna2 {
+          float: left;
+          width: 50%;
+        }
+
+        .coluna3 {
+          clear: both;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .coluna1,
+        .coluna2,
+        .coluna3 {
+          float: left;
+        }
+
+        .coluna1 {
+          width: 30%;
+        }
+
+        .coluna2 {
+          width: 60%;
+        }
+
+        .coluna3 {
+          width: 10%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article class="coluna1">coluna</article>
+    <article class="coluna2">coluna</article>
+    <article class="coluna3">coluna</article>
+  </body>
+</html>
