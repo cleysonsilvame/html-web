@@ -1,0 +1,29 @@
+/*Exemplo de CSS externo*/
+p{
+    text-align: center;
+    background-color: lightblue;
+    font-size: 24pt;
+    font-weight: bold;
+}
+/*seletor universal*/
+*{
+    font-family: Verdana;
+    font-size: 14pt;
+}
+/*todos os elementos dentro do primeiro*/
+article * {
+    color: red;
+}
+/*formatação para um conj de tags*/
+aside, section{
+    color: blue;
+    text-transform: uppercase; /*todos os caracteres em maiúsculo*/
+}
+/*formatação seletor descendente*/
+section header{
+    text-decoration: underline; /*sublinhado*/
+}
+/*formatação seletor filho*/
+p>strong{
+    color: magenta;
+}
