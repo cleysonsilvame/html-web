@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <style>
+      article {
+        border: 2px solid;
+        position: absolute;
+      }
+
+      article.um {
+        width: 200px;
+        height: 80px;
+        background-color: lightblue;
+        z-index: 3;
+      }
+
+      article.dois {
+        width: 110px;
+        height: 150px;
+        left: 120px;
+        top: 30px;
+        z-index: 2;
+        background-color: lightcoral;
+      }
+
+      article.tres {
+        width: 90px;
+        height: 300px;
+        left: 70px;
+        top: 50px;
+        background-color: lightgreen;
+      }
+      article:hover {
+        z-index: 10;
+      }
+    </style>
+  </head>
+
+  <body>
+    <article class="um">Primeira DIV</article>
+    <article class="dois">Segunda DIV</article>
+    <article class="tres">Terceira DIV</article>
+  </body>
+</html>
