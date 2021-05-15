@@ -1,0 +1,16 @@
+.orange {
+  color: #ffa216;
+}
+
+.bg-orange {
+  background-color: #ffa216;
+}
+
+.card:hover {
+  color: #ffa216;
+  border-color: #ffa216;
+}
+
+.card:hover p {
+  color: #f8f9fa;
+}
