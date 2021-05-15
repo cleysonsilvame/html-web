@@ -1,0 +1,49 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body > header {
+  background-color: black;
+  color: white;
+
+  font-size: 12px;
+  border-radius: 1.9rem;
+
+  text-align: center;
+
+  padding: 1rem;
+  margin: 1rem;
+}
+
+body > header > h1 {
+  margin: 0rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+main > section {
+  width: 20rem;
+  text-align: justify;
+  justify-self: center;
+
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+
+  padding: 0 3px 1.5rem;
+}
+
+main > section > header {
+  text-align: center;
+  font-size: 10px;
+  border-bottom: solid 2px;
+}
