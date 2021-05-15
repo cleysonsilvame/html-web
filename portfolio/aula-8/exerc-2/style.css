@@ -4,7 +4,7 @@
 }
 
 body {
-  width: 90%;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -18,11 +18,11 @@ body > header {
   text-align: center;
 
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 body > header > h1 {
-  margin: 0rem;
+  margin: 0;
 }
 
 main {
@@ -32,7 +32,6 @@ main {
 }
 
 main > section {
-  width: 20rem;
   text-align: justify;
   justify-self: center;
 
