@@ -1,30 +1,48 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Untitled Document</title>
     <style>
-        /* importar as fontes*/
-        
-        .fonte1 {
-            
-        }
-        
-        .fonte2 {
-            
-        }
-        
-        p {
-            
-        }
-    </style>
-</head>
+      /* importar as fontes*/
+      @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 
-<body>
+      @font-face {
+        font-family: 'Fonte1';
+        src: url('fonts/DoubleFeature20.ttf');
+      }
+
+      @font-face {
+        font-family: 'Fonte2';
+        src: url('fonts/WillyWonka.ttf');
+      }
+      .fonte1 {
+        font-family: Fonte1;
+        letter-spacing: 5px;
+        /* espaçamento entre as letras */
+      }
+
+      .fonte2 {
+        font-family: Fonte2;
+      }
+
+      p {
+        font-family: 'Indie Flower';
+      }
+    </style>
+  </head>
+
+  <body>
     <h1 class="fonte1">Utilizando a fonte MinhaFonte1</h1>
     <h1 class="fonte2">Utilizando a fonte Fonte MinhaFonte2</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</body>
-
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+  </body>
 </html>
