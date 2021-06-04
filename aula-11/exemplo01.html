@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo 1</title>
+    <meta charset="UTF-8" />
+
+    <style>
+      .outro {
+        background-color: lightcoral;
+      }
+      #content {
+        background-color: lightyellow;
+        width: 300px;
+        height: 300px;
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        overflow: auto;
+      }
+      #tabela {
+        border-spacing: 0;
+        border: 3px solid;
+        border-radius: 0 0 25px 25px;
+      }
+      #tabela caption {
+        text-transform: uppercase;
+        background-color: gray;
+        color: white;
+        border-radius: 25px 25px 0 0;
+      }
+
+      #tabela th,
+      #tabela td {
+        margin: 2px;
+        padding-bottom: 2px;
+      }
+
+      #tabela td {
+        width: 150px;
+        height: 55px;
+        vertical-align: center;
+        text-align: center;
+      }
+
+      tr:nth-child(odd) {
+        background-color: lightblue;
+      }
+
+      tr:nth-child(even) {
+        background-color: lightcyan;
+      }
+
+      tr:last-child > td:first-child {
+        border-radius: 0 0 0 25px;
+      }
+
+      tr:last-child > td:last-child {
+        border-radius: 0 0 25px 0;
+      }
+
+      tr > td:first-child {
+        border-right: 1px solid black;
+      }
+
+      tr:first-child  > th{
+        border-bottom: 1px solid black;
+      }
+
+      span {
+        color: red;
+        display: none;
+      }
+
+      td:hover > span {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <h1>Overflow</h1>
+      <article id="content">
+        <p>
+          O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu
+          argumento. Ao clicar em Vídeo Online, você pode colar o código de
+          inserção do vídeo que deseja adicionar. Você também pode digitar uma
+          palavra-chave para pesquisar online o vídeo mais adequado ao seu
+          documento. Para dar ao documento uma aparência profissional, o Word
+          fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto
+          que se complementam entre si.
+        </p>
+
+        <p>
+          Por exemplo, você pode adicionar uma folha de rosto, um cabeçalho e
+          uma barra lateral correspondentes. Clique em Inserir e escolha os
+          elementos desejados nas diferentes galerias. Temas e estilos também
+          ajudam a manter seu documento coordenado. Quando você clica em Design
+          e escolhe um novo tema, as imagens, gráficos e elementos gráficos
+          SmartArt são alterados para corresponder ao novo tema. Quando você
+          aplica estilos, os títulos são alterados para coincidir com o novo
+          tema. Economize tempo no Word com novos botões que são mostrados no
+          local em que você precisa deles.
+        </p>
+      </article>
+      <p class="outro">
+        O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento.
+        Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo
+        que deseja adicionar. Você também pode digitar uma palavra-chave para
+        pesquisar online o vídeo mais adequado ao seu documento. Para dar ao
+        documento uma aparência profissional, o Word fornece designs de
+        cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam
+        entre si.
+      </p>
+    </section>
+    <table id="tabela">
+      <caption>
+        Disciplinas
+      </caption>
+      <thead>
+        <!--cabeçalho da tabela-->
+        <tr>
+          <th>Dia da semana</th>
+          <th>Nome da disciplina</th>
+          <th>Nome do professor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--corpo da tabela-->
+        <tr>
+          <td>Segunda-feira</td>
+          <td>Cálculo</td>
+          <td>Silvio</td>
+        </tr>
+        <tr>
+          <td>Terça-feira</td>
+          <td>Aplicações para Internet</td>
+          <td>Cristiane</td>
+        </tr>
+        <tr>
+          <td>Quarta-feira</td>
+          <td>Programação de Computadores</td>
+          <td>Flávio</td>
+        </tr>
+        <tr>
+          <td>Quinta-feira</td>
+          <td>Lógica Computacional</td>
+          <td>Carlos</td>
+        </tr>
+        <tr>
+          <td>Sexta-feira</td>
+          <td>Matemática Aplicada</td>
+          <td>EaD <span>Inicio 13/04</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
