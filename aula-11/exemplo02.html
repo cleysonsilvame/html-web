@@ -1,62 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Exemplo 02</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <style>
-        
+      .caixa1,
+      .caixa2,
+      .caixa3 {
+        width: 300px;
+        height: 100px;
+        padding: 50px;
+        border: 10px solid red;
+      }
+
+      .caixa2 {
+        box-sizing: border-box;
+      }
+
+      .caixa3 {
+        box-sizing: border-box;
+        overflow: auto;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      #texto1 {
+        columns: 100px 3;
+      }
+
+      #texto2 {
+        column-count: 4;
+      }
+
+      .coluna {
+        column-gap: 40px;
+        column-rule: 4px inset red;
+      }
     </style>
-    
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <h2>Caixa sem o box-sizing</h2>
-        <article>
-            Caixa 1<br>
-            largura = 300px <br>
-            altura = 100px <br>
-            margem interna = 50px; <br>
-            borda = 10px
-        </article>
-        
-        <h2>Caixa com o box-sizing</h2>
-        <article>
-            Caixa 2<br>
-            largura = 300px <br>
-            altura = 100px <br>
-            margem interna = 50px; <br>
-            borda = 10px<br>
-            box-sizing: border-box;
-        </article>
-        
-        <h2>Caixa com o box-sizing e overflow</h2>
-        <article>
-            Caixa 3<br>
-            largura = 300px <br>
-            altura = 100px <br>
-            margem interna = 50px; <br>
-            borda = 10px<br>
-            box-sizing: border-box;
-        </article>
+      <h2>Caixa sem o box-sizing</h2>
+      <article class="caixa1">
+        Caixa 1<br />
+        largura = 300px <br />
+        altura = 100px <br />
+        margem interna = 50px; <br />
+        borda = 10px
+      </article>
+
+      <h2>Caixa com o box-sizing</h2>
+      <article class="caixa2">
+        Caixa 2<br />
+        largura = 300px <br />
+        altura = 100px <br />
+        margem interna = 50px; <br />
+        borda = 10px<br />
+        box-sizing: border-box;
+      </article>
+
+      <h2>Caixa com o box-sizing e overflow</h2>
+      <article class="caixa3">
+        Caixa 3<br />
+        largura = 300px <br />
+        altura = 100px <br />
+        margem interna = 50px; <br />
+        borda = 10px<br />
+        box-sizing: border-box;
+      </article>
     </section>
     <section>
-        <h1>Texto em Colunas</h1>
-        <article>
-            <p>
-                O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar.
-                Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si.
-                Por exemplo, você pode adicionar uma folha de rosto, um cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas diferentes galerias.
-                Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica em Design e escolhe um novo tema, as imagens, gráficos e elementos gráficos SmartArt são alterados para corresponder ao novo tema.
-                Quando você aplica estilos, os títulos são alterados para coincidir com o novo tema. Economize tempo no Word com novos botões que são mostrados no local em que você precisa deles.
-            </p>
-            <p>
-                O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar.
-                Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si.
-                Por exemplo, você pode adicionar uma folha de rosto, um cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas diferentes galerias.
-                Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica em Design e escolhe um novo tema, as imagens, gráficos e elementos gráficos SmartArt são alterados para corresponder ao novo tema.
-                Quando você aplica estilos, os títulos são alterados para coincidir com o novo tema. Economize tempo no Word com novos botões que são mostrados no local em que você precisa deles.
-            </p>
-        </article>
+      <h1>Texto em Colunas</h1>
+      <article>
+        <p id="texto1" class="coluna">
+          O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu
+          argumento. Ao clicar em Vídeo Online, você pode colar o código de
+          inserção do vídeo que deseja adicionar. Você também pode digitar uma
+          palavra-chave para pesquisar online o vídeo mais adequado ao seu
+          documento. Para dar ao documento uma aparência profissional, o Word
+          fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto
+          que se complementam entre si. Por exemplo, você pode adicionar uma
+          folha de rosto, um cabeçalho e uma barra lateral correspondentes.
+          Clique em Inserir e escolha os elementos desejados nas diferentes
+          galerias. Temas e estilos também ajudam a manter seu documento
+          coordenado. Quando você clica em Design e escolhe um novo tema, as
+          imagens, gráficos e elementos gráficos SmartArt são alterados para
+          corresponder ao novo tema. Quando você aplica estilos, os títulos são
+          alterados para coincidir com o novo tema. Economize tempo no Word com
+          novos botões que são mostrados no local em que você precisa deles.
+        </p>
+        <p id="texto2">
+          O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu
+          argumento. Ao clicar em Vídeo Online, você pode colar o código de
+          inserção do vídeo que deseja adicionar. Você também pode digitar uma
+          palavra-chave para pesquisar online o vídeo mais adequado ao seu
+          documento. Para dar ao documento uma aparência profissional, o Word
+          fornece designs de cabeçalho, rodapé, folha de rosto e caixa de texto
+          que se complementam entre si. Por exemplo, você pode adicionar uma
+          folha de rosto, um cabeçalho e uma barra lateral correspondentes.
+          Clique em Inserir e escolha os elementos desejados nas diferentes
+          galerias. Temas e estilos também ajudam a manter seu documento
+          coordenado. Quando você clica em Design e escolhe um novo tema, as
+          imagens, gráficos e elementos gráficos SmartArt são alterados para
+          corresponder ao novo tema. Quando você aplica estilos, os títulos são
+          alterados para coincidir com o novo tema. Economize tempo no Word com
+          novos botões que são mostrados no local em que você precisa deles.
+        </p>
+      </article>
     </section>
-</body>
+  </body>
 </html>
